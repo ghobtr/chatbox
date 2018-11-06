@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def train_from_file(fname):
     bot = ChatBot(
     "Terminal",
@@ -14,3 +16,9 @@ def train_from_file(fname):
     chatterbot.set_trainer(ListTrainer)
     trainer = ListTrainer(bot)
     trainer.train(fname)
+
+def main():
+    train_from_file("ai.yml") # For training file
+
+main()
+
